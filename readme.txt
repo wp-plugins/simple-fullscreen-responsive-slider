@@ -14,7 +14,11 @@ Simple Fullscreen Responsive Slider is an easy-to-use, lightweight, responsive, 
 
 Simple Fullscreen Responsive Slider (or Simple Slider) is exactly that—an
 easy-to-use, lightweight, responsive slider plugin designed to add a fullscreen
-slide show to your front page. Visit <a href="http://www.twirlingumbrellas.com/wordpress/simple-slider-fullscreen-responsive-wordpress-slider-plugin/">our blog</a>
+slide show to your front page. It supports multiple post thumbnails for slide
+backgrounds, has no branding, and you can edit all the CSS directly from the
+options page (or add it into your stylesheet and leave the custom CSS blank).
+
+Visit <a href="http://www.twirlingumbrellas.com/wordpress/simple-slider-fullscreen-responsive-wordpress-slider-plugin/">http://www.twirlingumbrellas.com/wordpress/simple-slider-fullscreen-responsive-wordpress-slider-plugin/</a>
 for more information.
 
 **DEVELOPER-FRIENDLY**
