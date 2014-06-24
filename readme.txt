@@ -23,7 +23,7 @@ Simple Fullscreen Responsive Slider (or Simple Slider) is exactly that—an easy
 
 Plugin Code: 
 
-<?php if ( shortcode_exists( 'simple-slider' ) ) : do_shortcode('[simple-slider]'); endif; ?>
+`<?php if ( shortcode_exists( 'simple-slider' ) ) : do_shortcode('[simple-slider]'); endif; ?>`
 
 == Frequently Asked Questions ==
 
