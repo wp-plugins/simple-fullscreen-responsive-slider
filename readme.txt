@@ -14,10 +14,8 @@ Simple Fullscreen Responsive Slider is an easy-to-use, lightweight, responsive, 
 
 Simple Fullscreen Responsive Slider (or Simple Slider) is exactly that—an
 easy-to-use, lightweight, responsive slider plugin designed to add a fullscreen
-slide show to your front page.
-
-The slider uses Patrick Kunka's EasyFader jQuery plugin (visit
-https://github.com/patrickkunka/easyfader for more information). 
+slide show to your front page. Visit <a href="http://www.twirlingumbrellas.com/wordpress/simple-slider-fullscreen-responsive-wordpress-slider-plugin/">our blog</a>
+for more information.
 
 **DEVELOPER-FRIENDLY**
 
@@ -40,6 +38,10 @@ Multiple Post Thumbnails</a>), users can attach up to six separate images for a
 true responsive slider. The plugin will prompt for six different backgrounds and
 use those images according to the device used (instead of sending large images
 to mobile devices and comparably low resolution images to retina and 4K displays).
+
+The slider uses Patrick Kunka's EasyFader jQuery plugin (visit
+https://github.com/patrickkunka/easyfader for more information). 
+
 
 == Installation ==
 
