@@ -23,11 +23,11 @@ for more information.
 
 **DEVELOPER-FRIENDLY**
 
-Or perhaps this section should read "client-friendly" as the plugin is has no
+Or perhaps this section should read "client-friendly" as the plugin has no
 branding on the slide editor or options page. Our goal was to create a useful
 slider that other developers would feel comfortable with and enjoy using on
-client projects. Note: The plugin is intended for developers and customizing
-the appearance requires customizing the default CSS.
+client projects. Note: The plugin is intended for developers and changing its
+appearance requires customizing the default CSS.
 
 **CUSTOMIZABLE**
 
