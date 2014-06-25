@@ -23,9 +23,11 @@ for more information.
 
 **DEVELOPER-FRIENDLY**
 
-The plugin is white box and features no branding on the slide editor or options
-page. Our goal was to create a useful slider that developers would enjoy using
-on client projects.
+Or perhaps this section should read "client-friendly" as the plugin is has no
+branding on the slide editor or options page. Our goal was to create a useful
+slider that other developers would feel comfortable with and enjoy using on
+client projects. Note: The plugin is intended for developers and customizing
+the appearance requires customizing the default CSS.
 
 **CUSTOMIZABLE**
 
@@ -41,7 +43,9 @@ plugin (see <a href="https://wordpress.org/plugins/multiple-post-thumbnails/">
 Multiple Post Thumbnails</a>), users can attach up to six separate images for a
 true responsive slider. The plugin will prompt for six different backgrounds and
 use those images according to the device used (instead of sending large images
-to mobile devices and comparably low resolution images to retina and 4K displays).
+to mobile devices and/or low resolution images to retina and 4K displays). If
+you leave a slot open, it will search subsequently smaller sized images so, at
+a minimum, you must attach an image to the smallest slot.
 
 The slider uses Patrick Kunka's EasyFader jQuery plugin (visit
 https://github.com/patrickkunka/easyfader for more information). 
@@ -49,17 +53,49 @@ https://github.com/patrickkunka/easyfader for more information).
 
 == Installation ==
 
-1. See <a href="http://codex.wordpress.org/Managing_Plugins">Managing Plugins</a> for instructions on installing this plugin. 
-1. Or upload the unzipped plugin folder to your '/wp-content/plugins/' directory and activate it from your 'Plugins' menu.
-1. If you wish to include multiple backgrounds, visit <a href="https://wordpress.org/plugins/multiple-post-thumbnails/">https://wordpress.org/plugins/multiple-post-thumbnails/</a> and install the MultiPostThumbnails plugin as well.
-1. Add the code listed below to your theme (typically this can be added after your body or header markup).
-1. Navigate to "Settings > Slider Options" and, at a minimum, save the default options.
+**INSTALLING THE PLUGIN**
+
+	The plugin can be installed and activated in the usual fashion. See
+	<a href="http://codex.wordpress.org/Managing_Plugins" target="_blank">Managing
+	Plugins</a> if you need help with this.
+
+**ADDING THE CODE**
+
+	Most users will need to edit their theme and manually insert the following code
+	to display the slider. This is typically added after your opening body or header
+	tag.
+
+	Note: If your theme has a fullwidth template, you may be able to add the
+	shortcode `[simple-slider]` directly in the page editor or theme options
+	panel.
 
 `<?php if ( shortcode_exists( 'simple-slider' ) ) : do_shortcode('[simple-slider]'); endif; ?>`
 
+**SAVING THE OPTIONS**
+
+	Lastly, you will need to, at a minimum, save the default options. You can do
+	this from the newly created "Settings > Slider Options" page. From here, you
+	can style the slider by customizing the default CSS.
+
+
 == Frequently Asked Questions ==
 
-Let us know if you have any questions!
+Let us know if you have any questions or suggestions!
+
+Q.	What happens if I use MultiPostThumbnails but do not fill (attach) all of the image sizes?
+A.	The plugin will search for subsequently smaller sized images and use them to construct the media queries. As a result, the first (and smallest) image slot is required.
+
+Q.	What are the image sizes used by Simple Slider?
+A.	On its own, Simple Slider provides one featured image slot for a "one size fits all" background. If you have Multiple Post Thumbnails installed, Simple Slider will instead prompt for:
+
+1. Smartphones: 888px by 888px (max-width: 1136px)
+1. Tablets: 1366px by 768px (max-width: 1599px)
+1. Laptops: 1600px by 900px (max-width: 1919px)
+1. Desktops: 1920px by 1080px (max-width: 2559px)
+1. Retina Displays: 2560px by 1600px (max-width: 3839px)
+1. 4K Displays: 3840px by 2160px (min-width: 3839px) 
+
+
 
 == Screenshots ==
 
