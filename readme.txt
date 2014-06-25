@@ -55,27 +55,27 @@ https://github.com/patrickkunka/easyfader for more information).
 
 **INSTALLING THE PLUGIN**
 
-	The plugin can be installed and activated in the usual fashion. See
-	<a href="http://codex.wordpress.org/Managing_Plugins" target="_blank">Managing
-	Plugins</a> if you need help with this.
+The plugin can be installed and activated in the usual fashion. See
+<a href="http://codex.wordpress.org/Managing_Plugins" target="_blank">Managing
+Plugins</a> if you need help with this.
 
 **ADDING THE CODE**
 
-	Most users will need to edit their theme and manually insert the following code
-	to display the slider. This is typically added after your opening body or header
-	tag.
-
-	Note: If your theme has a fullwidth template, you may be able to add the
-	shortcode `[simple-slider]` directly in the page editor or theme options
-	panel.
+Most users will need to edit their theme and manually insert the following code
+to display the slider. This is typically added after your opening body or header
+tag and only works on your front page.
 
 `<?php if ( shortcode_exists( 'simple-slider' ) ) : do_shortcode('[simple-slider]'); endif; ?>`
 
+Note: If your theme has a fullwidth template, you may be able to add the shortcode
+`[simple-slider]` directly in the page editor or theme options panel. Results
+may vary.
+
 **SAVING THE OPTIONS**
 
-	Lastly, you will need to, at a minimum, save the default options. You can do
-	this from the newly created "Settings > Slider Options" page. From here, you
-	can style the slider by customizing the default CSS.
+Lastly, you will need to, at a minimum, save the default options. You can do
+this from the newly created "Settings > Slider Options" page. From here, you
+can style the slider by customizing the default CSS.
 
 
 == Frequently Asked Questions ==
