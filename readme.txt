@@ -103,6 +103,7 @@ A.	On its own, Simple Slider provides one featured image slot for a "one size fi
 
 == Changelog ==
 
+1.0.1 - Fixed a PHP Warning (Thanks @jonhurleydesign)
 1.0.0 - Initial Release Tested to 3.9.1.
 
 == Upgrade Notice ==

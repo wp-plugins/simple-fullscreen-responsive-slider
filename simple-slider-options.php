@@ -26,7 +26,7 @@ class SFRS_Options {
 	public function add_options_page() {
 		add_options_page(
 				__( 'SFRS Options', 'simple-fullscreen-responsive-slider' ),
-				__( 'Slider Options', 'simple-fullscreen-responsive-slider' ),
+				__( 'Simple Slider', 'simple-fullscreen-responsive-slider' ),
 				'manage_options',
 				'sfrs-options',
 				array( $this, 'create_options_page' )

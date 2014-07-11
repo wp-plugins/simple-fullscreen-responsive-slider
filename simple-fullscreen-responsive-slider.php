@@ -4,7 +4,7 @@
  * Plugin Name: Simple Fullscreen Responsive Slider
  * Plugin URI: http://www.twirlingumbrellas.com/wordpress/simple-slider-fullscreen-responsive-wordpress-slider-plugin/
  * Description: A simple, white box, developer friendly plugin to create a fullscreen responsive slider.
- * Version: 1.0.0
+ * Version: 1.0.1
  * Author: Twirling Umbrellas
  * Author URI: http://www.twirlingumbrellas.com
  * License: GPL2
@@ -154,7 +154,7 @@ class SFRS_Slider {
 			'description' => __( 'Slides for homepage slider.', 'simple-fullscreen-responsive-slider' ),
 			'labels' => $labels,
 			'supports' => array( 'title', 'editor' ),
-			'taxonomies' => false,
+			'taxonomies' => array(),
 			'hierarchical' => false,
 			'public' => false,
 			'show_ui' => true,
@@ -186,42 +186,22 @@ class SFRS_Slider {
 	 */
 	public function configure_multipostthumbnails() {
 
-		new MultiPostThumbnails( array(
-			'label' => __( '888x888 (Smartphones)', 'simple-fullscreen-responsive-slider' ),
-			'id' => 'slide-bg-888x888',
-			'post_type' => 'sfrs_slider'
-				) );
+		$ids_and_labels = array(
+			'slide-bg-888x888' => __( '888x888 (Smartphones)', 'simple-fullscreen-responsive-slider' ),
+			'slide-bg-1366x768' => __( '1366x768 (Tablets)', 'simple-fullscreen-responsive-slider' ),
+			'slide-bg-1600x900' => __( '1600x900 (Laptops)', 'simple-fullscreen-responsive-slider' ),
+			'slide-bg-1920x1080' => __( '1920x1080 (Desktops)', 'simple-fullscreen-responsive-slider' ),
+			'slide-bg-2560x1600' => __( '2560x1600 (Retina Displays)', 'simple-fullscreen-responsive-slider' ),
+			'slide-bg-3840x2160' => __( '3840x2160 (4K Displays)', 'simple-fullscreen-responsive-slider' ),
+		);
 
-		new MultiPostThumbnails( array(
-			'label' => __( '1366x768 (Tablets)', 'simple-fullscreen-responsive-slider' ),
-			'id' => 'slide-bg-1366x768',
-			'post_type' => 'sfrs_slider'
-				) );
-
-		new MultiPostThumbnails( array(
-			'label' => __( '1600x900 (Laptops)', 'simple-fullscreen-responsive-slider' ),
-			'id' => 'slide-bg-1600x900',
-			'post_type' => 'sfrs_slider'
-				) );
-
-		new MultiPostThumbnails( array(
-			'label' => __( '1920x1080 (Desktops)', 'simple-fullscreen-responsive-slider' ),
-			'id' => 'slide-bg-1920x1080',
-			'post_type' => 'sfrs_slider'
-				) );
-
-		new MultiPostThumbnails( array(
-			'label' => __( '2560x1600 (Retina Displays)', 'simple-fullscreen-responsive-slider' ),
-			'id' => 'slide-bg-2560x1600',
-			'post_type' => 'sfrs_slider',
-				) );
-
-		// 4K Displays
-		new MultiPostThumbnails( array(
-			'label' => __( '3840x2160 (4K Displays)', 'simple-fullscreen-responsive-slider' ),
-			'id' => 'slide-bg-3840x2160',
-			'post_type' => 'sfrs_slider'
-				) );
+		foreach ( $ids_and_labels as $id => $label ) {
+			new MultiPostThumbnails( array(
+				'label' => $label,
+				'id' => $id,
+				'post_type' => 'sfrs_slider'
+					) );
+		}
 	}
 
 	/**
@@ -303,6 +283,7 @@ class SFRS_Slider {
 			echo ".simple-slide-content-wrapper { background: url(" . plugins_url( '', __FILE__ ) . "/images/" . $this->options['sfrs_option_overlay'] . ".png); }";
 		}
 
+		// if (is_array($content_array)) { echo "It's an Array!"; }
 		// we loop through the available media queries as required
 		foreach ( $queries as $query => $value ) {
 			echo $value . " {";
@@ -434,6 +415,7 @@ class SFRS_Slider {
 
 		echo '});});</script>';
 	}
+
 }
 
 $sfrs_slider_class = new SFRS_Slider();
