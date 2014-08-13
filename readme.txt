@@ -18,7 +18,7 @@ slide show to your front page. It supports multiple post thumbnails for slide
 backgrounds, has no branding, and you can edit all the CSS directly from the
 options page (or add it into your stylesheet and leave the custom CSS blank).
 
-Visit <a href="http://www.twirlingumbrellas.com/wordpress/simple-slider-fullscreen-responsive-wordpress-slider-plugin/">http://www.twirlingumbrellas.com/wordpress/simple-slider-fullscreen-responsive-wordpress-slider-plugin/</a>
+Visit <a href="http://www.twirlingumbrellas.com/portfolio/simple-slider/">http://www.twirlingumbrellas.com/portfolio/simple-slider/</a>
 for more information.
 
 **DEVELOPER-FRIENDLY**
@@ -102,6 +102,8 @@ A.	On its own, Simple Slider provides one featured image slot for a "one size fi
 1. The options panel for Simple Slider. 
 
 == Changelog ==
+
+1.0.2 - Updated Dashicon and Plugin URL
 
 1.0.1 - Fixed a PHP Warning (Thanks @jonhurleydesign)
 

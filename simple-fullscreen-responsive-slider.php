@@ -2,9 +2,9 @@
 
 /**
  * Plugin Name: Simple Fullscreen Responsive Slider
- * Plugin URI: http://www.twirlingumbrellas.com/wordpress/simple-slider-fullscreen-responsive-wordpress-slider-plugin/
+ * Plugin URI: http://www.twirlingumbrellas.com/portfolio/simple-slider/
  * Description: A simple, white box, developer friendly plugin to create a fullscreen responsive slider.
- * Version: 1.0.1
+ * Version: 1.0.2
  * Author: Twirling Umbrellas
  * Author URI: http://www.twirlingumbrellas.com
  * License: GPL2
@@ -73,9 +73,6 @@ class SFRS_Slider {
 		} else {
 			add_action( 'init', array( $this, 'configure_regular_post_thumbnails' ), 100 );
 		}
-
-		// Add menu icon styling
-		add_action( 'admin_head', array( $this, 'add_admin_menu_icons' ) );
 
 		// Options class for slider configuration
 		require_once ( trailingslashit( dirname( __FILE__ ) ) . 'simple-slider-options.php' );
@@ -156,13 +153,13 @@ class SFRS_Slider {
 			'supports' => array( 'title', 'editor' ),
 			'taxonomies' => array(),
 			'hierarchical' => false,
-			'public' => false,
+			'public' => true,
 			'show_ui' => true,
 			'show_in_menu' => true,
 			'show_in_nav_menus' => false,
 			'show_in_admin_bar' => true,
 			'menu_position' => 27,
-			'menu_icon' => '',
+			'menu_icon' => 'dashicons-images-alt',
 			'can_export' => true,
 			'has_archive' => false,
 			'exclude_from_search' => true,
@@ -172,13 +169,6 @@ class SFRS_Slider {
 		);
 
 		register_post_type( 'sfrs_slider', $args );
-	}
-
-	/**
-	 * Adds menu icon to admin dashboard for custom post types using dashicons
-	 */
-	public function add_admin_menu_icons() {
-		echo '<style>#adminmenu .menu-icon-sfrs_slider div.wp-menu-image:before { content: "\f169"; }</style>';
 	}
 
 	/**

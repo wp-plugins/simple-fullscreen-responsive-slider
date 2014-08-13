@@ -65,35 +65,36 @@ html, body { height: 100%; }
 	}
 } 
 
+.fader_controls {
+	.prev,
+	.next {
+		position: absolute;
+		height: 80px;
+		line-height: 55px;
+		width: 50px;
+		font-size: 100px;
+		text-align: center;
+		color: #fff;
+		top: 50%;
+		left: 0;
+		z-index: 4;
+		margin-top: -25px;
+		cursor: pointer;
+		opacity: .7;
+		transition: all 150ms;
+	}
 
-.prev,
-.next {
-	position: absolute;
-	height: 80px;
-	line-height: 55px;
-	width: 50px;
-	font-size: 100px;
-	text-align: center;
-	color: #fff;
-	top: 50%;
-	left: 0;
-	z-index: 4;
-	margin-top: -25px;
-	cursor: pointer;
-	opacity: .7;
-	transition: all 150ms;
+	.prev:hover,
+	.next:hover {
+		opacity: 1;
+	}
+
+	.next {
+		left: auto;
+		right: 0;
+	}
 }
-
-.prev:hover,
-.next:hover {
-	opacity: 1;
-}
-
-.next {
-	left: auto;
-	right: 0;
-}
-
+	
 .pager-list {
 	position: absolute;
 	width: 100%;

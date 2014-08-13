@@ -61,8 +61,8 @@ body {
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.5);
   text-transform: none;
 }
-.prev,
-.next {
+.fader_controls .prev,
+.fader_controls .next {
   position: absolute;
   height: 80px;
   line-height: 55px;
@@ -78,11 +78,11 @@ body {
   opacity: .7;
   transition: all 150ms;
 }
-.prev:hover,
-.next:hover {
+.fader_controls .prev:hover,
+.fader_controls .next:hover {
   opacity: 1;
 }
-.next {
+.fader_controls .next {
   left: auto;
   right: 0;
 }
