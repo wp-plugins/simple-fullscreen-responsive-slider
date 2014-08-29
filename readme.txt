@@ -3,7 +3,7 @@ Contributors: chrisstephens
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DAAYWU24GLCHL
 Tags: slider, responsive, responsive slider, fullscreen, fullscreen slider, fullscreen gallery, full screen, slideshow, images, slider plugin, wordpress slider, retina display, 4k display, mobile display, media queries, nivo, flexslider, revolution slider, multipostthumbnails, multiple post thumbnails, layerslider, image slider, image fader
 Requires at least: 3.0.0
-Tested up to: 3.9.1
+Tested up to: 3.9.2
 Stable tag: trunk
 License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -65,11 +65,12 @@ Most users will need to edit their theme and manually insert the following code
 to display the slider. This is typically added after your opening body or header
 tag and only works on your front page.
 
-`<?php if ( shortcode_exists( 'simple-slider' ) ) : do_shortcode('[simple-slider]'); endif; ?>`
+`<?php if ( (is_front_page()) && (shortcode_exists( 'simple-slider' )) ) : do_shortcode( '[simple-slider]' );
+endif; ?>`
 
-Note: If your theme has a fullwidth template, you may be able to add the shortcode
-`[simple-slider]` directly in the page editor or theme options panel. Results
-may vary.
+Note: If your theme has a full width template, you may be able to add the shortcode
+`[simple-slider]` directly in the page editor or theme options panel. But be careful
+as most of these templates will still add a wrapper of some sort. Results may vary.
 
 **SAVING THE OPTIONS**
 
@@ -107,7 +108,7 @@ A.	On its own, Simple Slider provides one featured image slot for a "one size fi
 
 1.0.1 - Fixed a PHP Warning (Thanks @jonhurleydesign)
 
-1.0.0 - Initial Release Tested to 3.9.1.
+1.0.0 - Initial Release Tested to 3.9.2.
 
 == Upgrade Notice ==
 
