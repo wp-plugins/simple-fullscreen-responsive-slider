@@ -105,6 +105,8 @@ A.	The slider is intended for web designers and so customizing the appearance re
 
 == Changelog ==
 
+1.0.3 - Minor bug fix. Updated for WordPress 4.0.
+
 1.0.2 - Updated Dashicon and Plugin URL.
 
 1.0.1 - Fixed a PHP Warning (Thanks @jonhurleydesign)
