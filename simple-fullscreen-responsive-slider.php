@@ -2,11 +2,11 @@
 
 /**
  * Plugin Name: Simple Fullscreen Responsive Slider
- * Plugin URI: http://www.twirlingumbrellas.com/portfolio/simple-slider/
+ * Plugin URI: http://wordpress.org/support/plugin/simple-fullscreen-responsive-slider
  * Description: A simple, white box, developer friendly plugin to create a fullscreen responsive slider.
  * Version: 1.0.2
  * Author: Twirling Umbrellas
- * Author URI: http://www.twirlingumbrellas.com
+ * Author URI: https://www.twirlingumbrellas.com
  * License: GPL2
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: simple-fullscreen-responsive-slider
@@ -151,7 +151,6 @@ class SFRS_Slider {
 			'description' => __( 'Slides for homepage slider.', 'simple-fullscreen-responsive-slider' ),
 			'labels' => $labels,
 			'supports' => array( 'title', 'editor' ),
-			'taxonomies' => array(),
 			'hierarchical' => false,
 			'public' => true,
 			'show_ui' => true,

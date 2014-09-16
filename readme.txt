@@ -18,7 +18,7 @@ slide show to your front page. It supports multiple post thumbnails for slide
 backgrounds, has no branding, and you can edit all the CSS directly from the
 options page (or add it into your stylesheet and leave the custom CSS blank).
 
-Visit <a href="https://www.twirlingumbrellas.com/portfolio/simple-slider/">http://www.twirlingumbrellas.com/portfolio/simple-slider/</a>
+Visit <a href="https://www.twirlingumbrellas.com/portfolio/simple-slider/">https://www.twirlingumbrellas.com/portfolio/simple-slider/</a>
 for more information.
 
 **DEVELOPER-FRIENDLY**
@@ -61,23 +61,20 @@ Plugins</a> if you need help with this.
 
 **ADDING THE CODE**
 
-Most users will need to edit their theme and manually insert the following code
-to display the slider. This is typically added after your opening body or header
-tag and only works on your front page.
+You will need to manually edit your theme and insert the following code to display
+the slider. This is typically added after your opening body or header tag and
+it will only work on your front page. The slider will not display properly if
+this is wrapped in additional tags.
 
-`<?php if ( (is_front_page()) && (shortcode_exists( 'simple-slider' )) ) : do_shortcode( '[simple-slider]' );
-endif; ?>`
-
-Note: If your theme has a full width template, you may be able to add the shortcode
-`[simple-slider]` directly in the page editor or theme options panel. But be careful
-as most of these templates will still add a wrapper of some sort. Results may vary.
+`<?php if (shortcode_exists( 'simple-slider' )) : do_shortcode( '[simple-slider]' ); endif; ?>`
 
 **SAVING THE OPTIONS**
 
-Lastly, you will need to, at a minimum, save the default options. You can do
-this from the newly created "Settings > Slider Options" page. From here, you
-can style the slider by customizing the default CSS.
-
+Lastly, you will need to, at a minimum, visit the slider options page and save
+the default options to the options database. You can do this from the newly
+created "Settings > Slider Options" page. From here, you can style the slider
+by customizing the default CSS. As this plugin is designed for other developers
+the default CSS is quite basic.
 
 == Frequently Asked Questions ==
 
@@ -96,7 +93,11 @@ A.	On its own, Simple Slider provides one featured image slot for a "one size fi
 1. Retina Displays: 2560px by 1600px (max-width: 3839px)
 1. 4K Displays: 3840px by 2160px (min-width: 3839px) 
 
+Q.	I can't get my slider to show up on my home page?
+A.	Chances are it's getting wrapped with another tag that does not have the correct CSS. 
 
+Q.	How do I style the slider?
+A.	The slider is intended for web designers and so customizing the appearance requires changing the default CSS.
 
 == Screenshots ==
 
@@ -104,12 +105,8 @@ A.	On its own, Simple Slider provides one featured image slot for a "one size fi
 
 == Changelog ==
 
-1.0.2 - Updated Dashicon and Plugin URL
+1.0.2 - Updated Dashicon and Plugin URL.
 
 1.0.1 - Fixed a PHP Warning (Thanks @jonhurleydesign)
 
 1.0.0 - Initial Release Tested to 3.9.2.
-
-== Upgrade Notice ==
-
-Upgrade Notice
