@@ -3,7 +3,7 @@ Contributors: chrisstephens
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DAAYWU24GLCHL
 Tags: slider, responsive, responsive slider, fullscreen, fullscreen slider, fullscreen gallery, full screen, slideshow, images, slider plugin, wordpress slider, retina display, 4k display, mobile display, media queries, nivo, flexslider, revolution slider, multipostthumbnails, multiple post thumbnails, layerslider, image slider, image fader
 Requires at least: 3.0.0
-Tested up to: 4.0.0
+Tested up to: 4.2.1.
 Stable tag: trunk
 License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -104,6 +104,8 @@ A.	The slider is intended for web designers and so customizing the appearance re
 1. The options panel for Simple Slider. 
 
 == Changelog ==
+
+1.0.4 - Minor CSS fix. Updated for WordPress 4.2.1.
 
 1.0.3 - Minor bug fix. Updated for WordPress 4.0.
 

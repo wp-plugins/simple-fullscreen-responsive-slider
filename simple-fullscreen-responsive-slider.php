@@ -4,8 +4,8 @@
  * Plugin Name: Simple Fullscreen Responsive Slider
  * Plugin URI: http://wordpress.org/support/plugin/simple-fullscreen-responsive-slider
  * Description: A simple, white box, developer friendly plugin to create a fullscreen responsive slider.
- * Version: 1.0.3
- * Author: Twirling Umbrellas
+ * Version: 1.0.4
+ * Author: Twirling Umbrellas Ltd.
  * Author URI: https://www.twirlingumbrellas.com
  * License: GPL2
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -45,7 +45,6 @@ class SFRS_Slider {
 	/*
 	 * Start up and check whether we're on an admin screen or the front page
 	 */
-
 	public function __construct() {
 		if ( is_admin() ) {
 			$this->load_admin_page();
@@ -131,40 +130,40 @@ class SFRS_Slider {
 	public function setup_post_type() {
 
 		$labels = array(
-			'name' => _x( 'Slider', 'Slider General Name', 'simple-fullscreen-responsive-slider' ),
-			'singular_name' => _x( 'Slider', 'Slider Singular Name', 'simple-fullscreen-responsive-slider' ),
-			'menu_name' => __( 'Slider', 'simple-fullscreen-responsive-slider' ),
-			'parent_item_colon' => __( 'Parent Slide:', 'simple-fullscreen-responsive-slider' ),
-			'all_items' => __( 'All Slides', 'simple-fullscreen-responsive-slider' ),
-			'view_item' => __( 'View Slide', 'simple-fullscreen-responsive-slider' ),
-			'add_new_item' => __( 'Add New Slide', 'simple-fullscreen-responsive-slider' ),
-			'add_new' => __( 'Add New', 'simple-fullscreen-responsive-slider' ),
-			'edit_item' => __( 'Edit Slide', 'simple-fullscreen-responsive-slider' ),
-			'update_item' => __( 'Update Slide', 'simple-fullscreen-responsive-slider' ),
-			'search_items' => __( 'Search Slides', 'simple-fullscreen-responsive-slider' ),
-			'not_found' => __( 'Not Found', 'simple-fullscreen-responsive-slider' ),
+			'name'				 => _x( 'Slider', 'Slider General Name', 'simple-fullscreen-responsive-slider' ),
+			'singular_name'		 => _x( 'Slider', 'Slider Singular Name', 'simple-fullscreen-responsive-slider' ),
+			'menu_name'			 => __( 'Slider', 'simple-fullscreen-responsive-slider' ),
+			'parent_item_colon'	 => __( 'Parent Slide:', 'simple-fullscreen-responsive-slider' ),
+			'all_items'			 => __( 'All Slides', 'simple-fullscreen-responsive-slider' ),
+			'view_item'			 => __( 'View Slide', 'simple-fullscreen-responsive-slider' ),
+			'add_new_item'		 => __( 'Add New Slide', 'simple-fullscreen-responsive-slider' ),
+			'add_new'			 => __( 'Add New', 'simple-fullscreen-responsive-slider' ),
+			'edit_item'			 => __( 'Edit Slide', 'simple-fullscreen-responsive-slider' ),
+			'update_item'		 => __( 'Update Slide', 'simple-fullscreen-responsive-slider' ),
+			'search_items'		 => __( 'Search Slides', 'simple-fullscreen-responsive-slider' ),
+			'not_found'			 => __( 'Not Found', 'simple-fullscreen-responsive-slider' ),
 			'not_found_in_trash' => __( 'Not Found in Trash', 'simple-fullscreen-responsive-slider' ),
 		);
 
 		$args = array(
-			'label' => __( 'Slider', 'simple-fullscreen-responsive-slider' ),
-			'description' => __( 'Slides for homepage slider.', 'simple-fullscreen-responsive-slider' ),
-			'labels' => $labels,
-			'supports' => array( 'title', 'editor' ),
-			'hierarchical' => false,
-			'public' => true,
-			'show_ui' => true,
-			'show_in_menu' => true,
-			'show_in_nav_menus' => false,
-			'show_in_admin_bar' => true,
-			'menu_position' => '27.45',
-			'menu_icon' => 'dashicons-images-alt',
-			'can_export' => true,
-			'has_archive' => false,
-			'exclude_from_search' => true,
-			'publicly_queryable' => false,
-			'rewrite' => false,
-			'capability_type' => 'page',
+			'label'					 => __( 'Slider', 'simple-fullscreen-responsive-slider' ),
+			'description'			 => __( 'Slides for homepage slider.', 'simple-fullscreen-responsive-slider' ),
+			'labels'				 => $labels,
+			'supports'				 => array( 'title', 'editor' ),
+			'hierarchical'			 => false,
+			'public'				 => true,
+			'show_ui'				 => true,
+			'show_in_menu'			 => true,
+			'show_in_nav_menus'		 => false,
+			'show_in_admin_bar'		 => true,
+			'menu_position'			 => '27.45',
+			'menu_icon'				 => 'dashicons-images-alt',
+			'can_export'			 => true,
+			'has_archive'			 => false,
+			'exclude_from_search'	 => true,
+			'publicly_queryable'	 => false,
+			'rewrite'				 => false,
+			'capability_type'		 => 'page',
 		);
 
 		register_post_type( 'sfrs_slider', $args );
@@ -176,9 +175,9 @@ class SFRS_Slider {
 	public function configure_multipostthumbnails() {
 
 		$ids_and_labels = array(
-			'slide-bg-888x888' => __( '888x888 (Smartphones)', 'simple-fullscreen-responsive-slider' ),
-			'slide-bg-1366x768' => __( '1366x768 (Tablets)', 'simple-fullscreen-responsive-slider' ),
-			'slide-bg-1600x900' => __( '1600x900 (Laptops)', 'simple-fullscreen-responsive-slider' ),
+			'slide-bg-888x888'	 => __( '888x888 (Smartphones)', 'simple-fullscreen-responsive-slider' ),
+			'slide-bg-1366x768'	 => __( '1366x768 (Tablets)', 'simple-fullscreen-responsive-slider' ),
+			'slide-bg-1600x900'	 => __( '1600x900 (Laptops)', 'simple-fullscreen-responsive-slider' ),
 			'slide-bg-1920x1080' => __( '1920x1080 (Desktops)', 'simple-fullscreen-responsive-slider' ),
 			'slide-bg-2560x1600' => __( '2560x1600 (Retina Displays)', 'simple-fullscreen-responsive-slider' ),
 			'slide-bg-3840x2160' => __( '3840x2160 (4K Displays)', 'simple-fullscreen-responsive-slider' ),
@@ -186,9 +185,9 @@ class SFRS_Slider {
 
 		foreach ( $ids_and_labels as $id => $label ) {
 			new MultiPostThumbnails( array(
-				'label' => $label,
-				'id' => $id,
-				'post_type' => 'sfrs_slider'
+				'label'		 => $label,
+				'id'		 => $id,
+				'post_type'	 => 'sfrs_slider'
 					) );
 		}
 	}
@@ -219,14 +218,14 @@ class SFRS_Slider {
 			'slide-bg-3840x2160' => '@media screen and ( min-width: 3840px )',
 			'slide-bg-2560x1440' => '@media screen and ( min-width: 2560px ) and ( max-width: 3839px )',
 			'slide-bg-1920x1080' => '@media screen and ( min-width: 1920px ) and ( max-width: 2559px )',
-			'slide-bg-1600x900' => '@media screen and ( min-width: 1600px ) and ( max-width: 1919px )',
-			'slide-bg-1366x768' => '@media screen and ( min-width: 1137px ) and ( max-width: 1599px )',
-			'slide-bg-888x888' => '@media screen and ( max-width: 1136px )'
+			'slide-bg-1600x900'	 => '@media screen and ( min-width: 1600px ) and ( max-width: 1919px )',
+			'slide-bg-1366x768'	 => '@media screen and ( min-width: 1137px ) and ( max-width: 1599px )',
+			'slide-bg-888x888'	 => '@media screen and ( max-width: 1136px )'
 		);
 
-		$keys = array_keys( $queries ); // Keys used for indexing thumbnails
-		$c = count( $keys );   // Total number of keys (and queries)
-		$i = 0; // Total number of slides (posts)
+		$keys	 = array_keys( $queries ); // Keys used for indexing thumbnails
+		$c		 = count( $keys );   // Total number of keys (and queries)
+		$i		 = 0; // Total number of slides (posts)
 
 		/*
 		 * The fun begins and we construct our slider array. We start by looping
@@ -246,8 +245,8 @@ class SFRS_Slider {
 			for ( $a = 0; $a < $c; $a++ ) {
 				for ( $b = $a; $b < $c; $b++ ) {
 					if ( MultiPostThumbnails::has_post_thumbnail( 'sfrs_slider', $keys[$b] ) ) {
-						$thumb_id = MultiPostThumbnails::get_post_thumbnail_id( 'sfrs_slider', $keys[$b], get_the_ID() );
-						$this->content[$i][$keys[$a]] = wp_get_attachment_image_src( $thumb_id, $keys[$b] );
+						$thumb_id						 = MultiPostThumbnails::get_post_thumbnail_id( 'sfrs_slider', $keys[$b], get_the_ID() );
+						$this->content[$i][$keys[$a]]	 = wp_get_attachment_image_src( $thumb_id, $keys[$b] );
 						break;
 					}
 				}
@@ -256,8 +255,8 @@ class SFRS_Slider {
 			/*
 			 * Grab the title and content for each slide on the way out the door.
 			 */
-			$this->content[$i]['title'] = get_the_title();
-			$this->content[$i]['content'] = get_the_content();
+			$this->content[$i]['title']		 = get_the_title();
+			$this->content[$i]['content']	 = get_the_content();
 			$i++;
 		}
 
@@ -269,7 +268,7 @@ class SFRS_Slider {
 		echo sanitize_text_field( $this->options['sfrs_option_css'] );
 
 		if ( isset( $this->options['sfrs_option_overlay'] ) && (!empty( $this->options['sfrs_option_overlay'] ) ) ) {
-			echo ".simple-slide-content-wrapper { background: url(" . plugins_url( '', __FILE__ ) . "/images/" . $this->options['sfrs_option_overlay'] . ".png); }";
+			echo ".simple-slide-content-wrapper { background-image: url(" . plugins_url( '', __FILE__ ) . "/images/" . $this->options['sfrs_option_overlay'] . ".png); }";
 		}
 
 		// if (is_array($content_array)) { echo "It's an Array!"; }
@@ -278,7 +277,7 @@ class SFRS_Slider {
 			echo $value . " {";
 			$j = $i;
 			foreach ( $this->content as $slide ) {
-				echo ".simple-slide-" . $j . " { background: url(" . $slide[$query][0] . "); }";
+				echo ".simple-slide-" . $j . " { background-image: url(" . $slide[$query][0] . "); }";
 				$j--;
 			}
 			echo "}";
@@ -310,15 +309,15 @@ class SFRS_Slider {
 			 * Check for a post thumbnail and load the content array
 			 */
 			if ( has_post_thumbnail() ) {
-				$thumb_id = get_post_thumbnail_id( get_the_ID() );
+				$thumb_id						 = get_post_thumbnail_id( get_the_ID() );
 				$this->content[$i]['background'] = wp_get_attachment_url( $thumb_id );
 			}
 
 			/*
 			 * Grab the title and content for each slide on the way out the door.
 			 */
-			$this->content[$i]['title'] = get_the_title();
-			$this->content[$i]['content'] = get_the_content();
+			$this->content[$i]['title']		 = get_the_title();
+			$this->content[$i]['content']	 = get_the_content();
 			$i++;
 		}
 
@@ -331,7 +330,7 @@ class SFRS_Slider {
 
 		// Add an overlay class if chosen
 		if ( isset( $this->options['sfrs_option_overlay'] ) && (!empty( $this->options['sfrs_option_overlay'] ) ) ) {
-			echo ".simple-slide-content-wrapper { background: url(" . plugins_url( '', __FILE__ ) . "/images/" . $this->options['sfrs_option_overlay'] . ".png); }";
+			echo ".simple-slide-content-wrapper { background-image: url(" . plugins_url( '', __FILE__ ) . "/images/" . $this->options['sfrs_option_overlay'] . ".png); }";
 		}
 
 		// Loop through slide backgrounds
