@@ -6,7 +6,7 @@
  * Description: A simple, white box, developer friendly plugin to create a fullscreen responsive slider.
  * Version: 1.0.4
  * Author: Twirling Umbrellas Ltd.
- * Author URI: https://www.twirlingumbrellas.com
+ * Author URI: http://wordpress.org/support/plugin/simple-fullscreen-responsive-slider
  * License: GPL2
  * License URI: http://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: simple-fullscreen-responsive-slider
@@ -14,7 +14,7 @@
  * @package simple-fullscreen-responsive-slider
  */
 /*
- * Copyright (C) 2014, Twirling Umbrellas - info@twirlingumbrellas.com
+ * Copyright (C) 2015, Twirling Umbrellas Ltd.
  * 
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by

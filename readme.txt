@@ -3,7 +3,7 @@ Contributors: chrisstephens
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DAAYWU24GLCHL
 Tags: slider, responsive, responsive slider, fullscreen, fullscreen slider, fullscreen gallery, full screen, slideshow, images, slider plugin, wordpress slider, retina display, 4k display, mobile display, media queries, nivo, flexslider, revolution slider, multipostthumbnails, multiple post thumbnails, layerslider, image slider, image fader
 Requires at least: 3.0.0
-Tested up to: 4.2.1.
+Tested up to: 4.2.2.
 Stable tag: trunk
 License: GPL2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -17,9 +17,6 @@ easy-to-use, lightweight, responsive slider plugin designed to add a fullscreen
 slide show to your front page. It supports multiple post thumbnails for slide
 backgrounds, has no branding, and you can edit all the CSS directly from the
 options page (or add it into your stylesheet and leave the custom CSS blank).
-
-Visit <a href="https://www.twirlingumbrellas.com/portfolio/simple-slider/">https://www.twirlingumbrellas.com/portfolio/simple-slider/</a>
-for more information.
 
 **DEVELOPER-FRIENDLY**
 
