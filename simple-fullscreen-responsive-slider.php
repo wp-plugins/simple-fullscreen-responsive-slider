@@ -1,10 +1,9 @@
 <?php
-
 /**
  * Plugin Name: Simple Fullscreen Responsive Slider
  * Plugin URI: http://wordpress.org/support/plugin/simple-fullscreen-responsive-slider
  * Description: A simple, white box, developer friendly plugin to create a fullscreen responsive slider.
- * Version: 1.0.4
+ * Version: 1.0.5
  * Author: Twirling Umbrellas Ltd.
  * Author URI: http://wordpress.org/support/plugin/simple-fullscreen-responsive-slider
  * License: GPL2
